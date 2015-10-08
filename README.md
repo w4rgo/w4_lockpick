@@ -6,6 +6,7 @@
 Currently Exile bases, safes and cars are imposible to raid propertly. With this addon I wanted to bring to Exile Mod the posibility of raiding.
 
 ## Features
+- Configurable object to act as a lockpick, by default is using **MineDetector** (if you have a mine detector in the inventory you will see a wheel menu when looking to a door , safe or car)
 - Lockpick can open a door.
 - Lockpick can open a safe.
 - Lockpick can open a car.
