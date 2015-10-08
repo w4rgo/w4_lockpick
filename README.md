@@ -20,5 +20,11 @@ Currently Exile bases, safes and cars are imposible to raid propertly. With this
 
 ## How to install
 
+###Step 1
+
+###Step 2
+
+###Step 3
+
 ## Credits
-Lockpick system for Exile Mod
+- To all the members and administration of www.zombiespain.es
