@@ -35,6 +35,7 @@ Currently Exile bases, safes and cars are imposible to raid propertly. With this
 ###Step 3 - CfgRemoteExec
 1. Locate your Class CfgRemoteExec (By default in the description.ext in your mission pbo)
 2. Modify it with the following:
+
 			class CfgRemoteExec
 			{
 			    class Functions
