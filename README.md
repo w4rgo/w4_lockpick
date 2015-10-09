@@ -32,7 +32,37 @@ Currently Exile bases, safes and cars are imposible to raid propertly. With this
 1. Open the folder **"2 - SERVER"**
 2. Pack the folder w4_lockpick into a pbo and paste it inside your **@ExileServer/addons** folder.
 
-###Step 3 - Database table
+###Step 3 - CfgRemoteExec
+1. Locate your Class CfgRemoteExec (By default in the description.ext in your mission pbo)
+2. Modify it with the following:
+		class CfgRemoteExec
+		{
+		    class Functions
+		    {
+		        mode = 1;
+		        jip = 0;
+		        class fnc_AdminReq { allowedTargets=2; };
+		        class ExileServer_system_network_dispatchIncomingMessage { allowedTargets=2; };
+		
+		        class FN_infiSTAR_C { allowedTargets=1; };
+		        class ExileClient_system_network_dispatchIncomingMessage { allowedTargets=1; };
+		
+		
+		        class w4_lockpick_fnc_lockpicked { allowedTargets = 2; };
+		        class w4_lockpick_fnc_lockpick_attempt { allowedTargets = 2; };
+		        class w4_lockpick_fnc_lockpick_failed { allowedTargets = 2; };
+		
+		        class w4_lockpick_fnc_create_marker_client { allowedTargets = 1; };
+		
+		    };
+		    class Commands
+		    {
+		        mode=0;
+		        jip=0;
+		    };
+		};
+
+###Step 4 - Database table
 1. Add the following to the bottom of your **@ExileServer\extDB\sql_custom_v2\exile.ini**
 
 		[saveLockpickUsage]
