@@ -42,12 +42,9 @@ Currently Exile bases, safes and cars are imposible to raid propertly. With this
 			    {
 			        mode = 1;
 			        jip = 0;
-			        class fnc_AdminReq { allowedTargets=2; };
 			        class ExileServer_system_network_dispatchIncomingMessage { allowedTargets=2; };
 			
-			        class FN_infiSTAR_C { allowedTargets=1; };
 			        class ExileClient_system_network_dispatchIncomingMessage { allowedTargets=1; };
-			
 			
 			        class w4_lockpick_fnc_lockpicked { allowedTargets = 2; };
 			        class w4_lockpick_fnc_lockpick_attempt { allowedTargets = 2; };
